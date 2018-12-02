@@ -1,12 +1,14 @@
-tart=`date +%s`
+start_time="$(date -u +%s)"
 count=0
-for i in {0..10000}
+for i in {0..1000}
 do
-		for j in {0..10000}
-				do
-							let "count+=1"
-								done
-							done
+	for j in {0..1000}
+		do
+			count=$((count + 1))
+		done
+done
 
-						end=`date +%s`
-						echo end - start
+end_time="$(date -u +%s)"
+
+elapsed="$(($end_time-$start_time))"
+echo "$elapsed secondes"

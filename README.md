@@ -1,10 +1,44 @@
 # SCRUM_Project
-##Groupe 2 
 
-Duret Jarod
-Gueny Enzo
-Serghini Adam
+## PDF to text parser for LIA, organisation and brainstorming practise.
 
-PDF to text parser for LIA, organisation and brainstorming practise.
+## Groupe 2
 
-https://www.overleaf.com/5823369838yswnmyfkyfnr
+### Composition du groupe
+
+* Duret Jarod
+* Gueny Enzo
+* Serghini Adam
+
+## Benchmark
+
+Utilisation d' une double boucle de 10 000 iterations plus un compteur.
+
+### Bash
+
+Uniquement 1000 iterations car trop long.
+![ScreenShot](./Benchmark/Screenshot/bash.png)
+
+### C++
+
+![ScreenShot](./Benchmark/Screenshot/c++.png)
+
+### Perl
+
+![ScreenShot](./Benchmark/Screenshot/perl.png)
+
+### Python
+
+![ScreenShot](./Benchmark/Screenshot/python.png)
+
+### Ruby
+
+![ScreenShot](./Benchmark/Screenshot/ruby.png)
+
+### Rust
+
+![ScreenShot](./Benchmark/Screenshot/rust.png)
+
+## Ressources
+
+Liens rapport: <https://www.overleaf.com/5823369838yswnmyfkyfnr>
