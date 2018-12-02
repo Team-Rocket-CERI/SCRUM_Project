@@ -10,6 +10,10 @@
 * Gueny Enzo
 * Serghini Adam
 
+### Choix du langage
+
+Nous avons choisi le langage Rust.
+
 ## Benchmark
 
 Utilisation d' une double boucle de 10 000 iterations plus un compteur.
@@ -41,4 +45,4 @@ Uniquement 1000 iterations car trop long.
 
 ## Ressources
 
-Liens rapport: <https://www.overleaf.com/5823369838yswnmyfkyfnr>
+Lien du rapport: <https://www.overleaf.com/5823369838yswnmyfkyfnr>
