@@ -12,7 +12,7 @@
 
 ### Choix du langage
 
-Nous avons choisi le langage Rust.
+Nous avons choisi les langages Rust et Python 
 
 ## Benchmark
 
