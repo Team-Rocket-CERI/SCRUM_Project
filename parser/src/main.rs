@@ -31,7 +31,6 @@ fn main() {
         //println!("{:?}", path);
         
         pdf_to_txt(&path.clone().into_string().unwrap());
-        read_file(&path.clone().into_string().unwrap());
 
     }
 }
