@@ -14,6 +14,10 @@
 
 Nous avons choisi le langage Rust.
 
+## Exemple d'un fichier de sortie xml
+
+![ScreenShot](./screenshot/xmlExample.png)
+
 ## Benchmark
 
 Utilisation d' une double boucle de 10 000 iterations plus un compteur.
