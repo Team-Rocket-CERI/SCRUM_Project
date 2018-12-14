@@ -12,7 +12,7 @@
 
 ### Choix du langage
 
-Nous avons choisi le langage Rust.
+Nous avons choisi le langage Rust et Python.
 
 ## Exemple d'un fichier de sortie xml
 
