@@ -15,12 +15,12 @@ else
 
     if [ "$1" = "-t"  ]
     then
-        echo "sorti txt"
+        echo "txt output"
         python2 parser/script/parserTXT.py
     elif [ "$1" = "-x" ]
     then
         mkdir papersXML
-        echo "sorti xml"
+        echo "xml output"
         python2 parser/script/parserXML.py
     fi
 

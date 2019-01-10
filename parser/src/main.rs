@@ -4,16 +4,22 @@ Program who lunch pdf_to_text on the directory in param
 
 **/
 
+
+//import
 use std::fs;
 use std::path::Path;
 use std::process::Command;
 use std::env;
 use std::fs::File;
 use std::io::prelude::*;
+use std::io;
 
 fn main() {
 
 
+
+
+    // get args
     let args: Vec<String> = env::args().collect();
     //println!("{:?}", args);
 
@@ -26,13 +32,15 @@ fn main() {
     let path = Path::new(&args[1]);
     for entry in fs::read_dir(path).expect("Unable to list") {
         let entry = entry.expect("unable to get entry");
-        
-        println!("{:?}", entry.path());
-        let mut test =  entry.file_name().into_string().expect("failed"); 
-        let mut iter = test.split(".");
-        let filename = iter.next();
-        //println!("{:?}", filename);
 
+        println!("{:?}", entry.path());
+        
+        let input: String = get_input("Parser ce fichier y/n ? ");
+
+        if (input == "n") {
+            continue;
+        }
+        
         let path = entry.path().into_os_string();
         //println!("{:?}", path);
         
@@ -45,6 +53,7 @@ fn main() {
 }
 
 
+// create directory
 fn create_directory(path: &String) -> std::io::Result<()> {
     match fs::create_dir(path) {
         Ok(r) => println!("{} created", path),
@@ -57,6 +66,7 @@ fn create_directory(path: &String) -> std::io::Result<()> {
     Ok(())
 }
 
+// lunch pdftotext
 fn pdf_to_txt(path: &String) {
 
     let filename = path.split(".").next();
@@ -71,10 +81,23 @@ fn pdf_to_txt(path: &String) {
     println!("{}", s);
 }
 
+// read a file
 fn read_file(filename: &String) {
     let mut f = File::open(Path::new(filename)).expect("file not found");
     let mut contents = String::new();
 
     f.read_to_string(&mut contents)
         .expect("something went wrong reading the file");
+}
+
+
+// get user input
+pub fn get_input(prompt: &str) -> String{
+    println!("{}",prompt);
+    let mut input = String::new();
+    match io::stdin().read_line(&mut input) {
+        Ok(_goes_into_input_above) => {},
+        Err(_no_updates_is_fine) => {},
+    }
+    input.trim().to_string()
 }
