@@ -10,6 +10,20 @@
 * Gueny Enzo
 * Serghini Adam
 
+### Lancement du programme
+
+Pour lancer le parseur, il faut executer le lanceur.sh avec le chemin du dossier contenant les pdf.
+
+Ici ./lanceur.sh papersPDF/
+
+le lanceur ajoute deux dossiers papersTXT et papersXML avec les fichiers correspondant. 
+
+### Dependance
+
+Python2: 
+* glob
+* re
+* etree
 ### Choix du langage
 
 Nous avons choisi le langage Rust et Python.
