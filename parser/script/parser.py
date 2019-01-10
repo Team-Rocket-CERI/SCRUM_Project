@@ -17,11 +17,10 @@ abstract = etree.SubElement(article, 'abstract')
 biblio = etree.SubElement(article, 'biblio')
 
 # chemin fichiers
-txt_files = glob.glob("../../Papers/*.txt")
-directory = "../../Paperstext/"
+txt_files = glob.glob("papersTXT/*.txt")
+directory = "papersXML/"
 
 for file in txt_files:
-
     filename = file.split("/")
     path = directory + filename[len(filename)-1].replace(".txt", ".xml")
     outFile = open(path, "w")
@@ -63,7 +62,7 @@ for file in txt_files:
         
         abstract.text = sequence
     except:
-        print "Unexpected error"
+        #print "Unexpected error"
         abstract.text = sequence.decode('utf-8')
 
 
@@ -83,7 +82,7 @@ for file in txt_files:
     try:    
         biblio.text = sequence
     except:
-        print "Unexpected error"
+        #print "Unexpected error"
         sequence = sequence.decode('utf-8')
         biblio.text = unicode(sequence)
 
