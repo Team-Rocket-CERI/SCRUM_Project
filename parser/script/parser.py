@@ -1,8 +1,8 @@
 import glob
 import re
 
-txt_files = glob.glob("../../Papers/*.txt")
-directory = "../../Paperstext/"
+txt_files = glob.glob("papersTXT/*.txt")
+directory = "papersTXT/"
 
 for file in txt_files:
     filename = file.split("/")

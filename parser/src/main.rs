@@ -1,3 +1,8 @@
+/**
+
+Program who lunch pdf_to_text on the directory in param
+
+**/
 use std::fs;
 use std::path::Path;
 use std::process::Command;
@@ -14,7 +19,7 @@ fn main() {
     let mut dir_name = String::from(args[1].clone());
     dir_name.push_str("text");
     //println!("{:?}", dir_name);
-    create_directory(&dir_name);
+    //create_directory(&dir_name);
 
 
     let path = Path::new(&args[1]);
