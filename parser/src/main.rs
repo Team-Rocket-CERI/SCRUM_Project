@@ -1,3 +1,9 @@
+/**
+
+Program who lunch pdf_to_text on the directory in param
+
+**/
+
 use std::fs;
 use std::path::Path;
 use std::process::Command;
@@ -7,12 +13,12 @@ use std::io::prelude::*;
 
 fn main() {
 
+
     let args: Vec<String> = env::args().collect();
     //println!("{:?}", args);
 
 
     let mut dir_name = String::from(args[1].clone());
-    dir_name.push_str("text");
     //println!("{:?}", dir_name);
     //create_directory(&dir_name);
 
@@ -32,7 +38,10 @@ fn main() {
         
         pdf_to_txt(&path.clone().into_string().unwrap());
 
+        //dir_name.push_str("text");
+
     }
+
 }
 
 
@@ -59,7 +68,7 @@ fn pdf_to_txt(path: &String) {
                     .expect("failed to execute process");
 
     let s = String::from_utf8_lossy(&output.stdout);
-    println!("{}", s);    
+    println!("{}", s);
 }
 
 fn read_file(filename: &String) {
@@ -68,6 +77,4 @@ fn read_file(filename: &String) {
 
     f.read_to_string(&mut contents)
         .expect("something went wrong reading the file");
-
-    println!("With text:\n{}", contents);
 }
