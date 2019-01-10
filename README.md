@@ -18,9 +18,19 @@ Ici ./lanceur.sh papersPDF/
 
 le lanceur ajoute deux dossiers papersTXT et papersXML avec les fichiers correspondant. 
 
+### Dependance
+
+Python2: 
+* glob
+* re
+* etree
 ### Choix du langage
 
-Nous avons choisi le langage Rust.
+Nous avons choisi le langage Rust et Python.
+
+## Exemple d'un fichier de sortie xml
+
+![ScreenShot](./screenshot/xmlExample.png)
 
 ## Benchmark
 

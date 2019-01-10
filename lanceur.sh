@@ -7,6 +7,6 @@ rm -r papersXML/
 mkdir papersTXT
 mv $1/*.txt papersTXT/
 mkdir papersXML
-python parser/script/parser.py
+python2 parser/script/parser.py
 
 echo 'parsing complete'
