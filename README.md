@@ -12,11 +12,11 @@
 
 ### Lancement du programme
 
-Pour lancer le parseur, il faut executer le lanceur.sh avec le chemin du dossier contenant les pdf.
+Pour lancer le parseur, il faut executer le lanceur.sh avec l' option -t (txt) ou -x (xml) et le chemin du dossier contenant les pdf.
 
-Ici ./lanceur.sh papersPDF/
+ex: ./parseur.sh -x papersPDF/
 
-le lanceur ajoute deux dossiers papersTXT et papersXML avec les fichiers correspondant. 
+Le lanceur ajoute deux dossiers papersTXT et papersXML en fonction des choix avec les fichiers correspondant. 
 
 ### Dependance
 
