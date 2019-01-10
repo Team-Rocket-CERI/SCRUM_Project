@@ -1,25 +1,18 @@
-<xml>
-    <article>
-        <preambule>Levner_2007_Fuzzifying clustering algorithms The case study of MajorClust.pdf</preambule>
-        <titre>Fuzzifying clustering algorithms The case study of MajorClust</titre>
-        <auteur>Levner</auteur>
-        <abstract>Abstract. Among various document clustering algorithms that have
-                    been proposed so far, the most useful are those that automatically reveal the number of clusters and assign each target document to exactly
-                    one cluster. However, in many real situations, there not exists an exact
-                    boundary between different clusters. In this work, we introduce a fuzzy
-                    version of the MajorClust algorithm. The proposed clustering method
-                    assigns documents to more than one category by taking into account
-                    a membership function for both, edges and nodes of the corresponding
-                    underlying graph. Thus, the clustering problem is formulated in terms
-                    of weighted fuzzy graphs. The fuzzy approach permits to decrease some
-                    negative effects which appear in clustering of large-sized corpora with
-                    noisy data.
+<xml><article><preambule>Levner_2007_Fuzzifying clustering algorithms The case study of MajorClust.pdf</preambule><titre>Fuzzifying clustering algorithms The case study of MajorClust</titre><auteur>Levner</auteur><abstract>Abstract. Among various document clustering algorithms that have
+been proposed so far, the most useful are those that automatically reveal the number of clusters and assign each target document to exactly
+one cluster. However, in many real situations, there not exists an exact
+boundary between different clusters. In this work, we introduce a fuzzy
+version of the MajorClust algorithm. The proposed clustering method
+assigns documents to more than one category by taking into account
+a membership function for both, edges and nodes of the corresponding
+underlying graph. Thus, the clustering problem is formulated in terms
+of weighted fuzzy graphs. The fuzzy approach permits to decrease some
+negative effects which appear in clustering of large-sized corpora with
+noisy data.
 
-        </abstract>
-        <biblio>References
-                1. MacKay, D.J.: Information Theory, Inference and Learning Algorithms. Cambridge University Press (2003)
-                2. Mirkin, B.: Mathematical Classification and Clustering. Springer (1996)
+</abstract><biblio>References
+1. MacKay, D.J.: Information Theory, Inference and Learning Algorithms. Cambridge
+University Press (2003)
+2. Mirkin, B.: Mathematical Classification and Clustering. Springer (1996)
 
-        </biblio>
-    </article>
-</xml>
+</biblio></article></xml>
