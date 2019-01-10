@@ -30,7 +30,7 @@ Nous avons choisi le langage Rust et Python.
 
 ## Exemple d'un fichier de sortie xml
 
-![ScreenShot](./screenshot/xmlExample.png)
+![ScreenShot](./screenshot/xml.png)
 
 ## Benchmark
 
