@@ -28,9 +28,12 @@ Python2:
 
 Nous avons choisi le langage Rust et Python.
 
-## Exemple d'un fichier de sortie xml
+## Exemple d'un fichier de sortie xml 
 
-![ScreenShot](./screenshot/xml.png)
+![ScreenShot](./screenshot/v3-p1.png)
+![ScreenShot](./screenshot/v3-p2.png)
+![ScreenShot](./screenshot/v3-p3.png)
+
 
 ## Benchmark
 

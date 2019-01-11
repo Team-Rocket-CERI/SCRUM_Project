@@ -1,3 +1,10 @@
+#!/usr/bin/env python2
+# coding: utf-8
+
+
+## TXT PARSER ###
+
+
 import glob
 import re
 
