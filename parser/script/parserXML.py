@@ -227,18 +227,47 @@ def parseAbstract(file):
 
 # extract the author of the article
 def parseAuthor(file):
-    aut = filename[len(filename)-1].split('_')
-    aut = aut[0]
-    auteur.text = aut
+	filename = file.split("/")
+	aut = filename[len(filename)-1].split('_')
+	aut = aut[0]
+	test = aut.replace('.', '-').replace('-', ' ')
+	test = test.split(" ")
+	author = test[0]
+
+	content = ""
+
+	with open(file) as mytxt:
+			for line in mytxt:							
+				if author in line:
+					content += line
+					break
+
+	try:		
+		auteur.text = transform(content)
+	except:
+		# print "Unexpected error"
+		auteur.text = content.decode('utf-8')
 
 
 # extract the title of the article
 def parseTitle(file):
-    title = filename[len(filename)-1].replace(".txt", "")
-    title = title.split("_")
-    title = title[len(title)-1]
+	content = ""
+	write = True
 
-    titre.text = title
+	with open(file) as mytxt:
+			for line in mytxt:
+							
+				if write:
+					content += line
+				if line.strip():
+					write = False
+
+
+	try:		
+		titre.text = transform(content)
+	except:
+		# print "Unexpected error"
+		titre.text = content.decode('utf-8')
 
 
 # encode / replace / decode
@@ -286,8 +315,8 @@ if __name__ == '__main__':
 		# nom du fichier d' origine
 		preambule.text = filename[len(filename)-1].replace(".txt", ".pdf")
 
-		parseTitle(filename)
-		parseAuthor(filename)
+		parseTitle(file)
+		parseAuthor(file)
 		parseAbstract(file)
 		parseIntroduction(file)
 		parseCorps(file)
